@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HtmlRender.MainPage">
+
+    <StackLayout>
+        <WebView  x:Name="WbView" VerticalOptions="FillAndExpand"  />
+        <Entry  x:Name="txt"/>
+
+
+
+        <StackLayout Orientation="Horizontal">
+            <Button  Text="BindHtml" x:Name="Btn" Clicked="Btn_Clicked" />
+            <Button  Text="BindSrc" x:Name="BtnSrc" Clicked="BtnSrc_Clicked" />
+
+        </StackLayout>
+        
+        <StackLayout Orientation="Horizontal" Margin="10,0,10,0" IsVisible="false">
+            <Button  HorizontalOptions="Start" Text="+" Clicked="BtnMxclick"/>
+            <Button  HorizontalOptions="EndAndExpand"  Text="-" Clicked="btnMinClick"/>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
